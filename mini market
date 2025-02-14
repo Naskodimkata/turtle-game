@@ -1,0 +1,84 @@
+print('What is your name you can choose:'
+      '  1. Maria '
+      '2. Martin '
+      '3. Chris ')
+pass
+print('what person ?')
+Person = input()
+Name_of_customer = input()
+print('what toy ?')
+Toy = input()
+pass
+print('You have 40 budget')
+Budget = 40
+pass
+print('How much money from 1 to 40')
+Money = int(input())
+pass
+print('What value : only $')
+Value = int(input())
+pass
+
+print(f'{Name_of_customer} will buy {Toy} for ({Budget} - {Money}) {Value}  ')
+if Budget < Money:
+    print(f'{Name_of_customer} dont have enough money for {Toy} she needs ({Money} - {Budget} {Value})')
+else:
+    print(f'{Name_of_customer} can buy {Toy} for ({Budget} - {Money} {Value})')
+if Value == '$':
+    pass
+else:
+    print('invalid value')
+if money < 100:
+    print('You cant have too much money!')
+if Name_of_customer == 'Maria' or 'Martin' or 'Chris':
+    print(f'Hi {Name_of_customer}')
+else:
+    print('invalid name.Restart the program to choose valid name')
+if Person == 'Kid':
+    print(f'You are a kid you are {Name_of_customer} ')
+    Toys_for_kid = input()
+    if Toys_for_kid == 'Monkey' or 'Car':
+        print(f'you can buy {Toys_for_kid}')
+        if Toys_for_kid == 'Monkey':
+         print(f'Monkey costs: ({Budget} - {Money})')
+        if Money == 20 and Budget == 40:
+            print(f'You can buy monkey')
+        if Toys_for_kid == 'Car':
+            print(f'Car costs: ({Budget} - {Money})')
+        if Money == 30 and Budget == 40:
+            print(f'You can buy car')
+elif Person == 'Man' or 'Girl':
+    Items_for_Mans_or_Girls = 'Phone' or 'Laptop'
+    if Items_for_Mans_or_Girls =='Phone':
+        print(f'you can buy the phone for ({Budget} - {Money})')
+        if Money == 15 and Budget == 40:
+            print('You can buy phone')
+    if Items_for_Mans_or_Girls == 'Tablet':
+        print(f'you can buy the tablet for ({Budget} - {Money})')
+        if Money == 35 and Budget == 40:
+            print('You can buy tablet')
+if Person == 'Man' or 'Girl' or 'Kid':
+    pass
+else:
+    print('You can choose only'
+          '1.Man'
+          '2.Girl'
+          '3.Kid'
+          'Please restart the game and select valid type of person :)')
+if Budget == 0:
+    print('You run out of money.'
+          'If you want to play again restart the game!')
+
+    while True:
+        if key == "f":
+            print('do you want to quit the shop')
+            Quit = 'Yes' or 'No'
+            if Quit == 'Yes':
+                break
+            elif Quit == 'No':
+                pass
+            elif not Quit == 'Yes' or 'No':
+                print('Invalid command choose:'
+                      '1.Yes'
+                      '2.No')
+                pass
